@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36203.30
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E0733E36-2547-49F5-A926-CB9ED456B8FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TippingApi.Application", "src\TippingApi.Application\TippingApi.Application.csproj", "{C63E35C6-0AB2-9ACC-4E64-8A4078C526FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TippingApi.Domain", "src\TippingApi.Domain\TippingApi.Domain.csproj", "{9B3CF170-8B28-C048-ADA2-C9CBCD60F930}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TippingApi.Infrastructure", "src\TippingApi.Infrastructure\TippingApi.Infrastructure.csproj", "{6632D1B5-19F5-8973-D92B-674BB4BBDDEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TippingApi.Service", "src\TippingApi.Service\TippingApi.Service.csproj", "{5A458865-BF9A-25E2-819B-B43473CE58E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TippingApi.Application.UnitTests", "tests\TippingApi.Application.UnitTests\TippingApi.Application.UnitTests.csproj", "{374FDCB4-FAAF-84EA-B0DC-E5C10F122980}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C63E35C6-0AB2-9ACC-4E64-8A4078C526FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C63E35C6-0AB2-9ACC-4E64-8A4078C526FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C63E35C6-0AB2-9ACC-4E64-8A4078C526FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C63E35C6-0AB2-9ACC-4E64-8A4078C526FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B3CF170-8B28-C048-ADA2-C9CBCD60F930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B3CF170-8B28-C048-ADA2-C9CBCD60F930}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B3CF170-8B28-C048-ADA2-C9CBCD60F930}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B3CF170-8B28-C048-ADA2-C9CBCD60F930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6632D1B5-19F5-8973-D92B-674BB4BBDDEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6632D1B5-19F5-8973-D92B-674BB4BBDDEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6632D1B5-19F5-8973-D92B-674BB4BBDDEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6632D1B5-19F5-8973-D92B-674BB4BBDDEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A458865-BF9A-25E2-819B-B43473CE58E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A458865-BF9A-25E2-819B-B43473CE58E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A458865-BF9A-25E2-819B-B43473CE58E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A458865-BF9A-25E2-819B-B43473CE58E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{374FDCB4-FAAF-84EA-B0DC-E5C10F122980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{374FDCB4-FAAF-84EA-B0DC-E5C10F122980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{374FDCB4-FAAF-84EA-B0DC-E5C10F122980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{374FDCB4-FAAF-84EA-B0DC-E5C10F122980}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C63E35C6-0AB2-9ACC-4E64-8A4078C526FA} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{9B3CF170-8B28-C048-ADA2-C9CBCD60F930} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{6632D1B5-19F5-8973-D92B-674BB4BBDDEF} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{5A458865-BF9A-25E2-819B-B43473CE58E6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{374FDCB4-FAAF-84EA-B0DC-E5C10F122980} = {E0733E36-2547-49F5-A926-CB9ED456B8FB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39624DE6-6C26-4823-9833-F82F492BE43F}
+	EndGlobalSection
+EndGlobal
