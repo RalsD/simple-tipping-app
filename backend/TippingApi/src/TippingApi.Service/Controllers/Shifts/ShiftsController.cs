@@ -50,6 +50,6 @@ public class ShiftsController : ControllerBase
 
         if (result.IsFailure) return BadRequest(result.Error);
 
-        return CreatedAtAction(nameof(GetShiftById), new { id = result.Value }, null);
+        return CreatedAtAction(nameof(GetShiftById), new { id = result.Value }, new { id = result.Value });
     }
 }

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using TippingApi.Application.Tips.AddTip;
 using TippingApi.Application.Tips.CalculateWeeklySplit;
 using TippingApi.Application.Tips.GetTipById;
+using TippingApi.Domain.Extensions;
 
 namespace TippingApi.Api.Controllers.Tips;
 
@@ -30,15 +31,18 @@ public class TipsController : ControllerBase
     }
 
     [HttpGet("weekly-split")]
-    public async Task<IActionResult> GetWeeklySplit([FromQuery] DateTime weekStart, CancellationToken ct)
+    public async Task<IActionResult> GetWeeklySplit([FromQuery] DateTime? weekStart, CancellationToken ct)
     {
-        var query = new GetWeeklyTipSplitQuery(weekStart);
+        var start = weekStart ?? DateTime.Today.StartOfWeek(DayOfWeek.Monday);
+
+        var query = new GetWeeklyTipSplitQuery(start);
         var result = await _sender.Send(query, ct);
 
         if (result.IsFailure) return NotFound(result.Error);
 
         return Ok(result.Value);
     }
+
 
     [HttpPost]
     public async Task<IActionResult> AddTip([FromBody] AddTipCommand command, CancellationToken ct)

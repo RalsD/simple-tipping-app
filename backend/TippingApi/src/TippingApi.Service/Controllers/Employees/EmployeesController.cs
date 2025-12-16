@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using TippingApi.Application.Employees.CreateEmployee;
+using TippingApi.Application.Employees.GetAllEmployees;
 using TippingApi.Application.Employees.GetEmployee;
 using TippingApi.Application.Employees.UpdateEmployee;
 
@@ -17,13 +18,13 @@ public class EmployeesController : ControllerBase
         _sender = sender;
     }
 
-    //[HttpGet]
-    //public async Task<IActionResult> GetAll(CancellationToken ct)
-    //{
-    //    var query = new GetAllEmployeesQuery();
-    //    var result = await _sender.Send(query, ct);
-    //    return Ok(result.Value);
-    //}
+    [HttpGet]
+    public async Task<IActionResult> GetAll(CancellationToken ct)
+    {
+        var query = new GetAllEmployeesQuery();
+        var result = await _sender.Send(query, ct);
+        return Ok(result.Value);
+    }
 
     [HttpGet("{id:guid}")]
     public async Task<IActionResult> GetById(Guid id, CancellationToken ct)

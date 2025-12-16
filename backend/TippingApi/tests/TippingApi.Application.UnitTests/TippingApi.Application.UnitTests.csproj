@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TippingApi.Application\TippingApi.Application.csproj" />
-    <ProjectReference Include="..\TippingApi.Domain\TippingApi.Domain.csproj" />
+    <ProjectReference Include="..\..\src\TippingApi.Application\TippingApi.Application.csproj" />
+    <ProjectReference Include="..\..\src\TippingApi.Domain\TippingApi.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -16,6 +16,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TippingApi.Service", "src\TippingApi.Service\TippingApi.Service.csproj", "{5A458865-BF9A-25E2-819B-B43473CE58E6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TippingApi.Application.UnitTests", "tests\TippingApi.Application.UnitTests\TippingApi.Application.UnitTests.csproj", "{374FDCB4-FAAF-84EA-B0DC-E5C10F122980}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9B3CF170-8B28-C048-ADA2-C9CBCD60F930} = {9B3CF170-8B28-C048-ADA2-C9CBCD60F930}
+		{C63E35C6-0AB2-9ACC-4E64-8A4078C526FA} = {C63E35C6-0AB2-9ACC-4E64-8A4078C526FA}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
